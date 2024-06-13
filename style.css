@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #DECDAC;
+}
+.pop-up-btn-container{
+    height: 243.2px;
+    width: 485px;
+    background-color: #FEFAF3;
+    border-radius: 28.82px;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    scale: 1;
+    transition: scale 0.3s ease-in-out;
+    box-shadow: 0 4px 2px rgba(0, 0, 0, 0.436);
+}
+
+.pop-up-btn{
+    height: 63px;
+    width: 285px;
+    background-color: #EBBF53;
+    border-radius: 31.71px;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    font-size: 28.18px;
+    font-family: "Heebo";
+    color: #FEFAF3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.413);
+}
+
+.pop-up-btn-container.hide-btn{
+    scale: 0;
+}
+
+.pop-up{
+    height: 346px;
+    width: 690px;
+    border-radius: 41px;
+    background-color: #FEFAF3;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    box-shadow: 0 8px 2px 0 rgba(0, 0, 0, 0.338);
+    scale: 0;
+    transition: scale 0.3s ease-in-out;
+}
+
+.open .pop-up{
+    scale: 1;
+}
+
+.close-icon{
+    font-size: 48px;
+    font-weight: 700;
+    color: #AFA187;
+    position: absolute;
+    right: 16px;
+    cursor: pointer;
+}
+
+.pop-up img{
+    position: absolute;
+    left: 48px;
+    top: -32px;
+}
+
+.pop-up-info{
+    position: absolute;
+    right: 16px;
+    top: 92px;
+}
+
+#don-not-miss {
+    font-family: "lnika";
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.pop-up-info p{
+    font-family: "lnika";
+    font-size: 18px;
+}
+
+.search-bar{
+    width: 560px;
+    height: 56px;
+    border: 1.5px solid #AFA187;
+    border-radius: 28px;
+    position: absolute;
+    bottom: 48px;
+    left: 50%;
+    transform: translate(-50%);
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.e-mail, .subscribe{
+    height: 100%;
+}
+
+.e-mail{
+    width: 70%;
+    background-color: #EEE8DD;
+}
+
+.subscribe{
+    width: 30%;
+    background-color: #EBBF53;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: "Heebo";
+    color: #FEFAF3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.e-mail form{
+    height: 100%;
+    width: 100%;
+}
+
+.e-mail-input{
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding-left: 20px;
+}
+
+.e-mail-input::placeholder {
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #AFA187;
+    font-family: "Heebo";
+}
+
+.overlay{
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.438);
+    display: none;
+}
+
+.open .overlay{
+    display: block;
+}
+
+@media(max-width: 768px){
+    .pop-up-btn-container{
+        height: 162px;
+        width: 324px;
+        border-radius: 20px;
+    }
+
+    .pop-up-btn{
+        height: 42.08px;
+        width: 190.38px;
+        border-radius: 12px;
+        font-size: 18.82px;
+    }
+
+    .pop-up{
+        height: 200.58px;
+        width: 400px;
+        border-radius: 16px;
+    }
+
+    .pop-up img{
+        height: 100px;
+        left: 20px;
+        top: -28px;
+    }
+
+    .close-icon{
+        font-size: 27.83px;
+    }
+
+    .pop-up-info{
+        right: 16px;
+        top: 20px;
+    }
+
+    #don-not-miss {
+        font-size: 23.18px;
+    }
+
+    .pop-up-info p{
+        font-size: 10.43px;
+    }
+
+    .search-bar{
+        width: 324.64px;
+        height: 32.46px;
+    }
+
+    .subscribe{
+        font-size: 10.43px;
+    }
+
+    .e-mail-input::placeholder{
+        font-size: 10.43px;
+    }
+}
